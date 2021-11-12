@@ -1,13 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net40;net45</TargetFrameworks>
+    <TargetFrameworks>net5.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>A fully managed C# port of the MinHook hooking library for native functions</Description>
-    <PackageProjectUrl>https://github.com/ccob/minhook.net</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/ccob/minhook.net</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/darth-vader-lg/minhook.net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/darth-vader-lg/minhook.net</RepositoryUrl>
     <PackageTags>hook api detour trampoline managed .net</PackageTags>
     <Version>1.1.1</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
